@@ -7,10 +7,12 @@ html {
     /* 1rem = 10px */
     font-size: 62.5%;
   }
-body {
+body, body * {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
+    color: rgba(255,255,255,0.8);
   }
+
 
 .calculator-container {
     width: 100%;
@@ -26,6 +28,7 @@ body {
     background-color: rgba(0,0,0,0.3);
     padding: 5rem;
     border-radius: 2rem;
+    width: 20%;
 }
 
 .calculator-grid {
@@ -33,14 +36,23 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 5;
     grid-gap: 0.3rem;
+    padding-top: 0.5rem;
+}
+
+.calculator-display {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 1rem;
+    padding: 2rem;
+    font-weight: 700;
+    height: 5rem;
+    text-align: right;
 }
 
 .button {
     padding: 2rem;
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 700;
     border: none;
-    color: rgba(255,255,255,0.8);
     background-color: rgba(0,0,0,0.5);
     cursor: pointer;
     transition: ease 0.3s;
@@ -48,9 +60,13 @@ body {
 
 .button:hover {
     transition: ease 0.3s;
-    background-color: rgb(34, 100, 26);
+    background-color: rgb(117,42,168)
 }
 
 .two-wide {
     grid-column: span 2;
+}
+
+#display-bottom {
+    font-size: 4rem;
 }
