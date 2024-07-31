@@ -46,6 +46,9 @@ body, body * {
     font-weight: 700;
     height: 5rem;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
 }
 
 .button {
@@ -74,3 +77,4 @@ body, body * {
 #display-top {
     color: rgba(255,255,255,0.5);
 }
+
